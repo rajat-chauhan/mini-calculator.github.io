@@ -1,4 +1,4 @@
-let display = document.querySelector(".displayResult");
+let display = document.querySelector("#displayContent");
 
 let input1 = document.querySelector(".input1");
 let input2 = document.querySelector(".input2");
