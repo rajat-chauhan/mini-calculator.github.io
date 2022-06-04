@@ -7,10 +7,20 @@
     box-sizing: border-box;
 }
 
+body{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(140, 213, 216);
+}
 .main-container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 50vw;
+    position: absolute;
+    left: 25vw;
+    top: 10vh;
 }
 #head{
     margin-top: 20px;
@@ -37,13 +47,73 @@
     padding: 5px;
 }
 .btns{
+    margin: 4px;
     margin-top: 10px;
-    margin-left: 4px;
+    width: 19.5vw;
 }
-.btn1, .btn2, .btn3, .btn4{
-    margin: 3px;
+.btn1{
+    width: 3.94vw;
+    color: black;
+}
+.btn2, .btn3, .btn4{
+    color: black;
+}
+.btn5{
+    width: 19.5vw;
+    margin-top: 8px;
+    color: black;
 }
 .btns:focus{
     outline: none;
     border: none;
+}
+
+
+/* FOR RESPONSIVENESS */
+@media screen and (min-width: 358px) and (max-width: 520px){
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        position: absolute;
+        left: 0;
+        top: 8vh;
+    }
+    #head{
+        font-size: 2rem;
+    }
+    .displayResult{
+        width: 60vw;
+        height: 30vh;
+        font-size: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .inputs{
+        width: 70vw;
+        margin-left: 24px;
+    }
+    .input1{
+        width: 30vw;
+    }
+    .input2{
+        width: 30vw;
+    }
+    .btns{
+        margin-left: 90px;
+        margin-top: 10px;
+        width: 90vw;
+    }
+    .btn1, .btn2, .btn3, .btn4{
+        width: 68vw;
+        margin: 2px;
+    }
+    .btn5{
+        width: 68vw;
+        margin-left: 13px;
+    }
+    
 }
